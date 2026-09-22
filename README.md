@@ -1,72 +1,66 @@
-# Godwin Mbah
+# GodwinXbt
 
-**GodwinXbt.** Smart contract auditor at SMC Audits.
-Researcher first. Builder second.
+**Software Engineer · Protocol Researcher · Security**
 
-A protocol can look safe on the dashboard and still fail in its accounting.
-I follow the settlement path. Contract code. Forked live state. Working proofs.
+I build and investigate systems where correctness, reliability, and economic behavior matter.
 
-[Portfolio](https://godwinxbt.vercel.app) · [Findings](https://godwinxbt.vercel.app/findings) · [Finding index](./FINDINGS.md) · [X](https://x.com/GodwinXbt) · [Telegram](https://t.me/GodwinXbt) · godwinxbt@gmail.com
+Work spans financial infrastructure, payments, blockchain systems, developer tooling, and security engineering.
+
+I like understanding systems from first principles: how they are designed, how state moves, where assumptions live, and what happens when those assumptions fail.
+
+[Portfolio](https://godwinxbt.vercel.app) · [Work](https://godwinxbt.vercel.app/work) · [Research](https://godwinxbt.vercel.app/research) · [X](https://x.com/GodwinXbt)
 
 ---
 
-## Hire me for
+## What I work on
 
-- Protocol research on live EVM and Solana systems
-- Smart contract review with PoCs against forked state
-- Payments and settlement-path work where the hop is the bug
-
-If the claim cannot be checked on-chain or in a fork, I am the wrong person.
-
-## Record
-
-| | |
-| --- | ---: |
-| Findings with PoC or traced root cause | **17** |
-| Protocols | **11** |
-| Critical + High | **9** |
-
-Numbers are only as good as the writeups. Each row in [FINDINGS.md](./FINDINGS.md) links to the full argument.
-
-## How a claim dies or survives
-
-1. Start from a real problem. A vault that looks solvent. A payment that dies at settlement.
-2. Read the mechanism. Storage, roles, the hop the dashboard hides.
-3. Prove it on a fork. Valid calls. Live chain data.
-4. Scope it honestly. If it is not exploitable today, I say so.
+- Financial systems and payment infrastructure
+- EVM / blockchain systems
+- Backend and developer tooling
+- Protocol design and mechanism research
+- Monitoring, observability, and invariants
+- Security engineering and adversarial testing
 
 ## Selected work
 
-| Project | Problem | Link |
-| --- | --- | --- |
-| [Blast Radius](https://github.com/Godwin-web3/blast-radius) | Approvals stay live after the app is gone | [live](https://blast-radius-pearl.vercel.app) |
-| [Assay](https://github.com/Godwin-web3/assay) | A ticker on Solana is not proof of what the token is | [live](https://assay-gold.vercel.app) |
-| [Paidline](https://github.com/Godwin-web3/paidline) | An invoice that dies at the settlement hop is not paid | [live](https://paidline.vercel.app) |
-| [Ragnarok](https://github.com/Godwin-web3/ragnarok) | A finding is not a finding until a fork proves it | repo |
-| [Keel](https://github.com/Godwin-web3/keel) | A public guess is worthless if it can be copied | [live](https://keel-black-phi.vercel.app) |
-| [NoGhosts](https://github.com/Godwin-web3/noghosts) | Agent hire with a logo and no evidence is noise | [live](https://noghosts.vercel.app) |
+| Project | What it is |
+| --- | --- |
+| [Ragnarok](https://github.com/Godwin-web3/ragnarok) | Adversarial research framework for proving economically meaningful protocol failures |
+| [Themis](https://github.com/Godwin-web3/themis) | Runtime invariant monitoring with multi-RPC quorum and reorg-aware validation |
+| [AgentPay](https://github.com/Godwin-web3/AgentPay) | Policy-controlled autonomous payments. Decision off-chain, permission on-chain |
+| [Paidline](https://github.com/Godwin-web3/paidline) | Payment and settlement infrastructure for programmable financial flows |
+| [Oracle Integrity Monitor](https://github.com/Godwin-web3/oracle-integrity-monitor) | Detect inconsistent, stale, or manipulated protocol data |
+| [Keel](https://github.com/Godwin-web3/keel) | Commit-reveal primitive for event contracts |
 
-## Findings (critical and high first)
+## Engineering
 
-| Sev | Protocol | Finding | Writeup |
-| --- | --- | --- | --- |
-| Critical | lemon.fun | Legacy bonding curve. Total buyer-fund theft | [index](./FINDINGS.md#lemon-fun-bonding-curve-theft) · [full](https://godwinxbt.vercel.app/findings/lemon-fun-bonding-curve-theft) |
-| Critical | Noon (USN) | RedeemHandler pays collateral with no USN ratio | [index](./FINDINGS.md#noon-redeemhandler-unratiod-drain) · [full](https://godwinxbt.vercel.app/findings/noon-redeemhandler-unratiod-drain) |
-| Critical | Noon (USN) | MinterHandlerV2 uncollateralized self-mint | [index](./FINDINGS.md#noon-minterhandler-uncollateralized-mint) · [full](https://godwinxbt.vercel.app/findings/noon-minterhandler-uncollateralized-mint) |
-| High | Flex Finance | Lender withdrawal auction self-deal | [index](./FINDINGS.md#flex-lender-auction-self-deal) · [full](https://godwinxbt.vercel.app/findings/flex-lender-auction-self-deal) |
-| High | Flex Finance | Borrower path. Same auction self-deal | [index](./FINDINGS.md#flex-borrower-auction-self-deal) · [full](https://godwinxbt.vercel.app/findings/flex-borrower-auction-self-deal) |
-| High | Hydrex | Minter one-time guard is a no-op | [index](./FINDINGS.md#hydrex-minter-initializer-noop) · [full](https://godwinxbt.vercel.app/findings/hydrex-minter-initializer-noop) |
-| High | Ripe Protocol | No L2 sequencer uptime check on Base | [index](./FINDINGS.md#ripe-sequencer-uptime) · [full](https://godwinxbt.vercel.app/findings/ripe-sequencer-uptime) |
-| High | Orvex | Stale voter reward-index capture | [index](./FINDINGS.md#orvex-voterv5-stale-reward-index) · [full](https://godwinxbt.vercel.app/findings/orvex-voterv5-stale-reward-index) |
-| High | Orvex | Missing burn(). Early-exit claims revert | [index](./FINDINGS.md#orvex-protocoltoken-missing-burn-early-exit) · [full](https://godwinxbt.vercel.app/findings/orvex-protocoltoken-missing-burn-early-exit) |
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-627EEA?logo=ethereum&logoColor=white)
+![Solana](https://img.shields.io/badge/Solana-9945FF?logo=solana&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
 
-The rest of the 17, including the ones that were not exploitable once run, live in [FINDINGS.md](./FINDINGS.md).
+## Security research
 
-## Stack
+Deployment-aware research on financial protocols.
 
-Solidity and Foundry for proofs. TypeScript, Next.js, and viem for live surfaces. Solana when the mint and the authority are the question. Python for monitors.
+**17 documented findings · 11 protocols**
 
-## Currently
+Source-to-deployment verification. Economic analysis. Executable PoCs. Stateful testing. Falsification.
 
-Full-time auditor at SMC Audits (Sir Mapy & Co). Remote. Sep 2026 to present.
-Still packaging the work so the receipts speak louder than the replies.
+→ [Security findings](https://github.com/Godwin-web3/Godwin-web3/blob/main/FINDINGS.md)
+
+## Currently interested in
+
+Financial infrastructure · stablecoins · payments · protocol engineering · distributed systems · developer tools · security
+
+---
+
+*Build systems. Understand them deeply. Then try to break them.*
