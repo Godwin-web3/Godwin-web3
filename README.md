@@ -8,7 +8,7 @@ Work spans financial infrastructure, payments, blockchain systems, developer too
 
 I like understanding systems from first principles: how they are designed, how state moves, where assumptions live, and what happens when those assumptions fail.
 
-[Portfolio](https://godwinxbt.vercel.app) · [Work](https://godwinxbt.vercel.app/work) · [Research](https://godwinxbt.vercel.app/research) · [X](https://x.com/GodwinXbt)
+[Portfolio](https://godwinxbt.vercel.app) · [Work](https://godwinxbt.vercel.app/work) · [Research](https://godwinxbt.vercel.app/research) · [CV](https://godwinxbt.vercel.app/cv) · [X](https://x.com/GodwinXbt)
 
 ---
 
